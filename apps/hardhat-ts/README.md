@@ -8,7 +8,6 @@ pnpm install
 
 ## TEST
 
-
 - test using hardhat that can leverage hardhat-deploy to reuse deployment procedures and named accounts:
 
 ```bash
@@ -17,17 +16,13 @@ pnpm test
 
 ## RAFFLE CONTRACT
 
- Raffle contract
+Raffle contract
 
- -[] Enter the lottery (people should pay some amount)
- -[] pick a random winner (verify the winner randomly)
- -[] Winner shoud be select every X minutes => fully automate
- -[] We would need to make use of a chainlink oracle for
-  - randomness outside the blockchain
-  - automated execution(chainlink keepers)
+-[x] Enter the lottery (people should pay some amount) -[x] pick a random winner (verify the winner randomly) -[x] Winner shoud be select every X minutes => fully automate
+-[] We would need to make use of a chainlink oracle for
 
-
-
+- randomness outside the blockchain
+- automated execution(chainlink keepers)
 
 ## SCRIPTS
 
