@@ -8,6 +8,7 @@ import "solidity-coverage";
 import { node_url, accounts, addForkConfiguration } from "./utils/network";
 
 const config: HardhatUserConfig = {
+  defaultNetwork: "hardhat",
   solidity: {
     compilers: [
       {
@@ -22,20 +23,25 @@ const config: HardhatUserConfig = {
     ],
   },
   namedAccounts: {
-    deployer: 0,
+    deployer: {
+      default: 0,
+    },
+    player: {
+      default: 1,
+    }
   },
   networks: addForkConfiguration({
     hardhat: {
       initialBaseFeePerGas: 0, // to fix : https://github.com/sc-forks/solidity-coverage/issues/652, see https://github.com/sc-forks/solidity-coverage/issues/652#issuecomment-896330136
-      chainId: 1337,
+      chainId: 31337,
     },
     localhost: {
       url: node_url("localhost"),
       accounts: accounts(),
     },
     staging: {
-      url: node_url("rinkeby"),
-      accounts: accounts("rinkeby"),
+      url: node_url("goerli"),
+      accounts: accounts("goerli"),
     },
     production: {
       url: node_url("mainnet"),
@@ -56,6 +62,7 @@ const config: HardhatUserConfig = {
     goerli: {
       url: node_url("goerli"),
       accounts: accounts("goerli"),
+      blockConfirmations: 6,
     },
   }),
 

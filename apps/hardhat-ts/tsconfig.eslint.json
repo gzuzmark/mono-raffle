@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "helper-hardhat-config.ts",
+    "test",
+    "deploy",
+    "scripts",
+    ".eslintrc.js",
+    "hardhat.config.ts"
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
@@ -15,5 +15,9 @@
     "HARDHAT_CONFIG": "hardhat.config.ts",
     "HARDHAT_COMPILE": "true"
   },
-  "mochaExplorer.require": ["ts-node/register/transpile-only"]
+  "mochaExplorer.require": ["ts-node/register/transpile-only"],
+  "[solidity]": {
+    "editor.defaultFormatter": "NomicFoundation.hardhat-solidity",
+    "editor.formatOnSave": true
+  }
 }

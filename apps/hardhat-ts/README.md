@@ -15,6 +15,19 @@ pnpm install
 pnpm test
 ```
 
+## RAFFLE CONTRACT
+
+ Raffle contract
+
+ -[] Enter the lottery (people should pay some amount)
+ -[] pick a random winner (verify the winner randomly)
+ -[] Winner shoud be select every X minutes => fully automate
+ -[] We would need to make use of a chainlink oracle for
+  - randomness outside the blockchain
+  - automated execution(chainlink keepers)
+
+
+
 
 ## SCRIPTS
 
