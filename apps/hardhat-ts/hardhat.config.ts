@@ -72,6 +72,7 @@ const config: HardhatUserConfig = {
   gasReporter: {
     currency: "USD",
     gasPrice: 100,
+    outputFile: 'gas-report.txt',
     enabled: process.env.REPORT_GAS ? true : false,
     coinmarketcap: process.env.COINMARKETCAP_API_KEY,
     maxMethodDiff: 10,
@@ -81,7 +82,7 @@ const config: HardhatUserConfig = {
     target: "ethers-v5",
   },
   mocha: {
-    timeout: 0,
+    timeout: 200000,
   },
   external: process.env.HARDHAT_FORK
     ? {
