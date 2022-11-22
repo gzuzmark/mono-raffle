@@ -2,7 +2,7 @@ import { assert, expect } from "chai";
 import { BigNumber } from "ethers";
 import { network, ethers, getNamedAccounts } from "hardhat";
 import { developmentChains } from "../../helper-hardhat-config";
-import { Raffle } from "../../typechain-types";
+import { Raffle } from "../../../frontend-lottery/src/typechain";
 
 developmentChains.includes(network.name)
   ? describe.skip
