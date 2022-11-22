@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["next", "prettier"],
+  extends: ["wesbos/typescript"],
   settings: {
     next: {
       rootDir: ["apps/*/", "packages/*/"],

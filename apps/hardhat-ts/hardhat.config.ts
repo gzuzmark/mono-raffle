@@ -137,6 +137,10 @@ const config: HardhatUserConfig = {
   mocha: {
     timeout: 500000, // 200 seconds max for running tests
   },
+  typechain: {
+    outDir: "../frontend-lottery/src/typechain",
+    target: "ethers-v5",
+  },
 };
 
 export default config;
